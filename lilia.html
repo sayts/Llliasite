@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liliya Moskina - Преображение тела</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(255,182,193,0.8), rgba(255,182,193,0.8)),
+                        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5em;
+            color: #e75480;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .photo-collage {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .photo-collage img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-box {
+            background: rgba(255,255,255,0.95);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e75480;
+            color: white!important;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin: 20px 0;
+            transition: transform 0.3s;
+            min-height: 80px; /* Добавлено для двух строк */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-text {
+            font-size: 1.1em;
+            line-height: 1.2;
+        }
+
+        .btn-subtext {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .social-links a {
+            color: #e75480;
+            font-size: 2em;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ff1493;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .logo {
+                font-size: 2.5em;
+            }
+
+            .btn {
+                padding: 15px 20px;
+                min-height: 70px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">Liliya Moskina</h1>
+            <h2>43 года. Секрет моего преображения</h2>
+        </header>
+
+        <div class="main-content">
+            <div class="photo-collage">
+                <!-- Добавьте реальные URL фотографий -->
+                <img src="WhatsApp Image 2025-02-19 at 16.51.16.jpeg" alt="До похудения">
+                <img src="WhatsApp Image 2025-02-19 at 16.50.52.jpeg" alt="После похудения">
+                <img src="WhatsApp Image 2025-02-19 at 16.51.18.jpeg" alt="Продукция">
+            </div>
+
+            <div class="cta-box">
+                <h2>«Почему я выгляжу так молодо?»</h2>
+                <p style="margin: 20px 0; font-size: 1.2em;">
+                    Сбросила 32 кг благодаря вкусной и полезной продукции! 
+                    Открываю секреты питания в своем клубе ЗОЖ. Присоединяйся и стань 
+                    такой же стройной и уверенной в себе!
+                </p>
+                
+                <a href="https://wa.me/79874861469" class="btn" target="_blank">
+                    <div class="btn-text">Открываю секреты питания</div>
+                    <div class="btn-subtext">в своем клубе зож</div>
+                </a>
+                
+                <h3>Свяжитесь со мной:</h3>
+                <div class="social-links">
+                    <a href="https://vk.com/id441690768" target="_blank">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="https://t.me/liliamoskin" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/79874861469" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 2px 2px 3px #999;z-index:1000;">
+        <i class="fab fa-whatsapp" style="margin-top:15px;"></i>
+    </a>
+</body>
+</html>
